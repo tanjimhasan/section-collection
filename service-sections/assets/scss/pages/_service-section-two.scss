@@ -1,0 +1,110 @@
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+service section one style start 
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+
+ .service-section-two{
+ 	.section-head{
+ 		&:after{
+
+ 			background:#487eb0;
+ 		}
+ 	}
+ 	.single-service-item{
+ 		margin-bottom:40px;
+ 		padding:0 20px 20px;
+ 		position:relative;
+ 		z-index:1;
+ 		&:hover{
+ 			&:before{
+ 				animation: topbottomlinefull 500ms ease-in-out 0s forwards;
+ 			}
+ 			&:after{
+ 				animation: toprightlinefull 500ms ease-in-out 0s forwards;
+    			animation-delay: 500ms;
+ 			}
+ 		}
+ 		&:after{
+ 			position:absolute;
+ 			right:0;
+ 			bottom:-8px;
+ 			height:0%;
+ 			width:0%;
+ 			border:2px solid #487eb0;
+ 			content:"";
+ 			border-left:0;
+ 			border-bottom:0;
+ 			z-index:-1;
+ 		}
+ 		&:before{
+ 			position:absolute;
+ 			left:0;
+ 			top:10px;
+ 			height:0%;
+ 			width:0%;
+ 			border:2px solid #487eb0;
+ 			content:"";
+ 			border-right:0;
+ 			border-top:0;
+ 		}
+ 		.service-inner{
+ 			h2{
+ 				font-size: 20px;
+			    font-weight: 700;
+			    color: #000000;
+			    letter-spacing: 0;
+			    position: relative;
+			    margin-bottom: 15px;
+			    background: #fff;
+			    display: inline-block;
+			    padding: 0 20px;
+			    margin-left: -20px;
+
+			    &:after{
+			    	position:absolute;
+			    	left:-10px;
+			    	top:5px;
+			    	width:20px;
+			    	height:20px;
+			    	border-radius:50%;
+			    	background:#487eb0;
+			    	content:"";
+			    }
+ 			}
+ 		}
+ 	}
+ 	
+ }
+@keyframes topbottomlinefull {
+    0% {
+        width: 0%;
+        height: 0%;
+    }
+    50% {
+        width: 0%;
+        height: 100%;
+    }
+    100% {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+@keyframes toprightlinefull {
+    0% {
+        width: 0%;
+        height: 0%;
+    }
+    50% {
+        width: 0%;
+        height: calc(100% - 8px);
+    }
+    100% {
+        width: 100%;
+        height: calc(100% - 8px);
+    }
+}
+
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+service section one style end 
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */

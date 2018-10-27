@@ -1,0 +1,74 @@
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+service section Three style start 
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+
+ .service-section-three{
+    .section-head{
+        &:after{
+            background:#084F85;
+        }
+        &:before{
+            left:55%;
+        }
+    }
+    .service-box{
+        img{
+            width:100%;
+        }
+        h2{
+            font-size:20px;
+            padding:15px;
+            color:#fff;
+            text-align:center;
+            background:#6B0900;
+        }
+    }
+    a{
+        text-decoration:none;
+    }
+    .fake-box{
+        position:relative;
+        img,h2{
+            opacity:0;
+        }
+        .service-cta{
+            width:100%;
+            height:100%;
+            position:absolute;
+            left:0;
+            top:0;
+            .service-cta-inner{
+                width:100%;
+                height:100%;
+                .service-cta-table-cell{
+                    vertical-align:middle;
+                    text-align:center;
+                    background:#084F85;
+                    color:#fff;
+                    h3{
+                        color:#fff;
+                        font-weight:700;
+                    }
+                    .service-btn{
+                        display:inline-block;
+                        color:#fff;
+                        background:#DFA748;
+                        padding:10px 15px;
+                        text-decoration:none;   
+                    }
+                    p{
+                        margin-bottom:5px;
+                    }
+                    .phone-number{
+                        font-size:24px;
+                    }
+                }
+            }
+        }
+    }
+ }
+
+
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+service section Three style end 
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */

@@ -1,0 +1,62 @@
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+service section one style start 
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+
+ .service-section-one{
+ 	
+ 	.service-list{
+ 		border-left:1px solid #ddd;
+ 		border-bottom:1px solid #ddd;
+ 		.single-service-item{
+ 			flex-basis:33.33%;
+ 			border:none;
+ 			border-right:1px solid #ddd;
+ 			border-top:1px solid #ddd;
+ 			padding:3%;
+ 			text-align:center;
+ 			transition:.3s;
+ 			@include media-breakpoint-only(sm) {
+		        flex-basis:50%;
+		    }
+ 			@include media-breakpoint-only(xs) {
+		        flex-basis:100%;
+		    }
+ 			&:hover{
+ 				box-shadow:0 0 80px #A6A6A6;
+ 				.service-icon{
+	 				i{
+	 					color:#D22A24;
+	 					&:before{
+	    					opacity:1;
+		 				}
+	 				}
+ 				
+ 				}
+ 			}
+ 			h2{
+ 				font-size:18px;
+ 				text-transform:uppercase;
+ 				font-weight:400;
+ 				margin:0;
+ 			}
+ 			.service-icon{
+ 				i{
+ 					&:before{
+	 					font-size:34px;
+	 					margin-left:0;
+	 					margin: 15px 0;
+    					display: inline-block;
+    					font-weight:700;
+    					opacity:.4;
+	 				}
+ 				}
+ 				
+ 			}
+ 		}
+ 	}
+ }
+
+
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+service section one style end 
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */

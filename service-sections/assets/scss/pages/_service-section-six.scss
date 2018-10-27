@@ -1,0 +1,113 @@
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+service section six style start 
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+
+.service-section-six{
+    .single-featured-item{
+        position:relative;
+        z-index:2;
+        .featuered-bg{
+            position:absolute;
+            left:20%;
+            width:50%;
+            height:100%;
+            background-size:cover;
+            background-position:center;
+            background-color:#ddd;
+            bottom:-50px;
+            @include media-breakpoint-between(xs, md){
+               position:static;
+               width:100%;
+               height:300px;
+            }
+
+        }
+        .feature-content{
+            background:#fff;
+            box-shadow:0 0 10px #ddd;
+            padding:40px 60px;
+            color:#111;
+            position:relative;
+            padding-left:120px;
+            border-bottom:2px solid #FE5E3C;
+            P{
+                @include media-breakpoint-only(xs) {
+                    font-size:14px;
+                    margin-bottom:0;
+                }
+            }
+            @include media-breakpoint-between(xs, md){
+               margin:20px 0;
+            }
+            @include media-breakpoint-only(xs) {
+                padding:40px 30px;
+                padding-left:80px;
+            }
+            .feature-no{
+                position:absolute;
+                font-size:36px;
+                left:40px;
+                top:30px;
+                font-weight:900;
+                opacity:.4;
+                @include media-breakpoint-only(xs) {
+                    left:20px;
+                    font-size:30px;
+                }
+                &:after{
+                    position: absolute;
+                    left: -5px;
+                    top: 40px;
+                    width: 75px;
+                    height: 3px;
+                    background: #333;
+                    opacity: .4;
+                    content: "";
+                    transform: rotate(-45deg);
+                    @include media-breakpoint-only(xs) {
+                        left:-15px;
+                        top:35px;
+                    }
+                }
+            }
+            h2{
+                font-size:24px;
+                color:#111;
+            }
+        }
+    }
+    .feature-1{
+        .featuered-bg{
+            background-image:url('../images/service-section-9/bg-1.jpg');
+        }
+    }
+    .feature-2{
+        .featuered-bg{
+            background-image:url('../images/service-section-9/bg-2.jpg');
+        }
+        .feature-content{
+            border-color:#2DC793;
+        }
+    }
+    .feature-3{
+        .featuered-bg{
+            background-image:url('../images/service-section-9/bg-3.jpg');
+        }
+        .feature-content{
+            border-color:#B279F6;
+        }
+    }
+    .feature-4{
+        .featuered-bg{
+            background-image:url('../images/service-section-9/bg-4.jpg');
+        }
+        .feature-content{
+            border-color:#FEB954;
+        }
+    }
+ }
+
+
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+service section six style end 
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */

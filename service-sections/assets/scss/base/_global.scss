@@ -1,0 +1,12 @@
+/* ================ Global setting ================== */
+
+
+.section-block{
+	padding:80px 0;
+}
+
+.small-device-padding-0{
+	@include media-breakpoint-between(xs, md){
+		padding:0;
+	}
+}

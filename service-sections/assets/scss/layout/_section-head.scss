@@ -1,0 +1,25 @@
+.section-head{
+	margin-bottom:60px;
+	text-transform:uppercase;
+	position:relative;
+	z-index:2;
+	&:after,&:before{
+		position:absolute;
+		left:50%;
+		bottom:-15px;
+		width:80px;
+		height:4px;
+		background:#2ed573;
+		content:"";
+		margin-left:-40px;
+		z-index:-1;
+	}
+	&:before{
+		background:#333;
+		left:56%;
+		width:16px;
+		height:6px;
+		z-index:1;
+		bottom:-16px;
+	}
+}

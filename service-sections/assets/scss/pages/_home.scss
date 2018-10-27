@@ -1,0 +1,54 @@
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+home page style start 
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+.boxed-service-preview{
+	margin:-20px 0;
+}
+.section-collection{
+	.service-section-box{
+		display:block;
+		text-decoration:none;
+		margin:20px 0;
+		&:hover{
+			.section-preview{
+				border-width:4px;
+			}
+		}
+		.section-preview{
+			background-size:cover;
+			background-position:center;
+			height:220px;
+			border:2px solid #f0f0f0;
+			transition:.3s;
+		}
+		.preview-img-1{
+			background-image:url('../images/section-1.png');
+		}
+		.preview-img-2{
+			background-image:url('../images/section-2.png');
+		}
+		.preview-img-3{
+			background-image:url('../images/section-3.png');
+		}
+		.preview-img-4{
+			background-image:url('../images/section-4.png');
+		}
+		.preview-img-5{
+			background-image:url('../images/section-5.png');
+		}
+		.preview-img-6{
+			background-image:url('../images/section-6.png');
+		}
+		h2{
+			font-size:20px;
+			text-align:center;
+			margin-top:15px;
+			margin-bottom:0;
+		}
+	}
+}
+
+
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+home page style end 
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
